@@ -1,4 +1,7 @@
 const errorMiddleware = (err, req, res, next) => {
+
+    console.log(err);
+    
     try {
         let error = { ...err };
         error.message = err.message;
